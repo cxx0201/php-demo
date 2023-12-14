@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>手绘日记</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script type="text/javascript" src="javascript/index.js"></script>
+</head>
+	<body>
+    	<div class="top">
+        	<a href="index.html" class="logo"></a>
+            <div class="options">
+            	<?php if(empty($_SESSION['user'])){?>
+                    <div id="test" class="home">
+                    	<span></span>
+                        <a href="login.php" class="dc">登录</a>
+                        <em></em>
+                    </div>
+                    <div id="lx" class="fav">
+                    	<span></span>
+                        <a href="register.php" class="dc">注册</a>
+                    </div>
+                <?php } else {?>
+                欢迎您，<?php echo htmlspecialchars($_SESSION['user']);  ?><a href="logout.php">退出</a> 
+                <?php } ?>
+            </div>
+        </div>
+        <div class="nav">
+        	<div class="nav_con">
+            	<ul>
+                	<li class="cur"><a href="login.html"><span>首页</span></a></li>
+                    <li><a href="#"><span>课堂</span></a></li>
+                    <li><a href="#"><span>文章</span></a></li>
+                    <li><a href="#"><span>找灵感</span></a></li>
+                    <li><a href="#"><span>关于我们</span></a></li>
+                    <li><a href="#"><span>学员作品</span></a></li>
+                </ul>
+            </div>
+        </div>

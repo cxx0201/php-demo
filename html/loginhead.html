@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8" />
+    <title>手绘日记</title>
+    <link rel="stylesheet" type="text/css" href="css/template.css" />
+    <script type="text/javascript" src="javascript/index.js"></script>
+    <?php
+    if($message){
+        echo '<script type="text/javascript">alert(" '.$message.' ");</script>';
+    }
+    ?>
+</head>
+<body>
+	<div class="top">
+    	<a href="index.html" class="logo"></a>
+        <div class="options">
+        	<div id="test" class="home">
+            	<a href="login.php">登录</a>
+            </div>
+            <div id="lx" class="fav">
+            	<a href="register.php">注册</a>
+            </div>
+        </div>
+    </div>
+</body>
